@@ -16,3 +16,10 @@ variable "network_info" {
   })
   description = "network information"
 }
+
+variable "tags" {
+    type = map(string)
+    default = {
+      Env = "dev"
+    }
+}
